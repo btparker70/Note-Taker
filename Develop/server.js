@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 // Routes
 
-require("./routes/htmlRoutes")(app);
+require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // Start the server to begin listening
