@@ -4,22 +4,21 @@ const jsonfile = require('jsonfile');
 const file = "./db.json"
 
 
-// temp note array
+// Saved notes array
 var savedNotes = [];
-// var obj = {
-//     table: []
-// };
-// saves note to db
-// saveWriter = () => {
-//     obj.table.push(noteArr);
-//     console.log(obj);
-    // var json = JSON.stringify(obj);
 
-    // fs.appendFile("./db.json", json, function (err) {
-    //     if (err) throw err;
-    //     console.log('Saved!' + obj.noteArr);
-    //   });
+// Add new note to database
+// noteAppender = (reqBody, savedNotes) => {
+//         // Reads the db.json contents
+//         var dbJSON = jsonfile.readFileSync(file);
+
+//         // Appends it to the db.json
+//         dbJSON.push(reqbody);
+//         jsonfile.writeFileSync(file, dbJSON);
+
+//         // Returns the updated saved notes array
+//         res.json(savedNotes);
 // }
 
 module.exports = savedNotes;
-// module.exports = saveWriter();
+// module.exports = noteAppender();
