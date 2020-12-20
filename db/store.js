@@ -32,8 +32,11 @@ noteDeleter = (savedNotes, file, req, res) => {
     var id = req.param("id");
 
     // Remove that entire element from the db array
-    dbJSON.splice(id, 1);
-
+    if (dbJSON.length === 1) {
+        dbJSON.pop();
+    } else {
+        dbJSON.splice(id, 1);
+    }
     // Rewrites the db.json file
     jsonfile.writeFileSync(file, dbJSON);
 
@@ -41,9 +44,5 @@ noteDeleter = (savedNotes, file, req, res) => {
     res.json(savedNotes);
 }
 
+// Exports
 module.exports = savedNotes;
-// module.exports = noteAppender();
-
-
-// const file = "./db.json"
-// var fs = require('fs');
