@@ -11,14 +11,18 @@ Thanks for visiting! My name is Brian and I am a web development student through
 # Note-Taker
 A simple note taking app
 
-[![Screenshot](https://github.com/btparker70/Note-Taker/blob/main/readmeassets/img1.png?raw=true)
+![Screenshot](https://github.com/btparker70/Note-Taker/blob/main/readmeassets/img1.png?raw=true)
 
 
 # Table of Contents
 
+* [Link](#Link)
 * [Usage](#Usage)
 * [What I learned](#What-I-Learned)
 * [License](#License)
+
+# Link
+https://note-taker-bp1717.herokuapp.com/
 
 # Usage
 Run the app by starting a node server using server.js. Open it on a browser and head to the routes /, /notes and /api/notes. On /notes you can see the main functionality of the program. Enter a title and text into the textareas and hit the 'save' button on the top right. This saves the note to the save area on the left. Hit the 'pencil' to edit and create a new not. Hit the 'trash can' to delete saved notes. Head to /api/notes to see the json file for the database of notes created.
